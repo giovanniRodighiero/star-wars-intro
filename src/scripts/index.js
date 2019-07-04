@@ -1,5 +1,8 @@
-import MyPrototype from './MyPrototype';
-import MyClass from './MyClass';
+// import MyPrototype from './MyPrototype';
+// import MyClass from './MyClass';
+
+import TextAnimation from './TextAnimation';
+import IntroMenu from './IntroMenu';
 
 // STOP USING JQUERY FOR DOMREADY CALLBACK
 function ready(fn) {
@@ -13,9 +16,6 @@ function ready(fn) {
 ready(_ => {
     console.log('in domready !');
     
-    const c = new MyClass();
-    c.printValue();
-
-    const p = new MyPrototype();
-    p.printValue();
+    // const textAnimation = new TextAnimation();
+    const introMenu = new IntroMenu();
 });
